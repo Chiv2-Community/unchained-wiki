@@ -3,7 +3,7 @@ Chivalry 2 Unchained is a set of tools made by the community, for the community,
 ## Join our Discord
 Join our Discord community to connect with other Chivalry 2 Unchained users, get support, share your mods, and stay updated with the latest news and events.
 
-[Join our Discord](https://discord.gg/chiv2unchained)
+[Join our Discord](https://discord.gg/chiv2unchained){ .md-button }
 
 ## Getting started
 Chivalry 2 does not allow mods by default, so it must be run through a custom launcher. Whether you want to just play modded chivalry 2, host your own servers, or develop your own mods, you will need the Unchained Launcher.
