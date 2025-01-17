@@ -1,0 +1,3 @@
+[submodule "submodules/ArgonSDK-FieldGuide"]
+	path = submodules/ArgonSDK-FieldGuide
+	url = https://github.com/Knutschbert/ArgonSDK-FieldGuide.git
