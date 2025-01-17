@@ -1,4 +1,3 @@
-# Chivalry 2 Unchained
 Chivalry 2 Unchained is a set of tools made by the community, for the community, that allows users to host their own modded servers and create mods
 
 ## Getting started
