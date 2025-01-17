@@ -4,7 +4,6 @@ edit_uri: blob/main/docs/
 
 
 theme:
-  custom_dir: material
   name: 'material'
   font:
     text: Volkov
