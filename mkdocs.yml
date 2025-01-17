@@ -57,7 +57,7 @@ markdown_extensions:
 
 plugins:
   - mermaid2:
-    javascript: https://unpkg.com/mermaid/dist/mermaid.min.js
+      javascript: https://unpkg.com/mermaid/dist/mermaid.min.js
   - search
   - roamlinks 
   - embed_file 
