@@ -4,28 +4,29 @@ edit_uri: blob/main/docs/
 
 
 theme:
-    name: 'material'
-    font:
-      text: Volkov
-    palette:
+  custom_dir: material
+  name: 'material'
+  font:
+    text: Volkov
+  palette:
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue grey
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+  # Light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: blue grey
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: amber
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  # Dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: amber
+    accent: blue
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
 
 # Extensions
 markdown_extensions:
