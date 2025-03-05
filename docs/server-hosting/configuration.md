@@ -59,7 +59,8 @@ MaxPlayers=256
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
-| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
+| ServerName | The name displayed in the upper left corner when pressing Tab in-game | MyLocalServer |
+| ServerIdentifier | The server identifier displayed in the upper left corner when pressing Tab in-game | id |
 | BotBackfillEnabled | Enables or disables bot backfill feature | True |
 | BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
 | BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
@@ -75,7 +76,8 @@ MaxPlayers=256
 ```ini
 [/Script/TBL.TBLGameMode]
 # Server Name
-ServerName=My Local server
+ServerName=Example
+ServerIdentifier=id
 
 # Bot Backfill Settings
 BotBackfillEnabled=True
@@ -113,8 +115,7 @@ bHorseCompatibleServer=true
 bSavedHasAgreedToTOS=True
 ```
 
-!!! note "Important"
-    This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt.
+!!! This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt. If your server isn't starting, this is likely the cause.
 
 ### [/Script/TBL.LTSGameMode] Section
 
