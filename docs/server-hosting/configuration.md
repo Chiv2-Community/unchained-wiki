@@ -76,6 +76,7 @@ MaxPlayers=256
 | AutoBalanceOptions | Auto-balance settings for player count ranges (MinNumPlayers, MaxNumPlayers, AllowedNumPlayersDifference) | (MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1) |
 | StartOfMatchGracePeriodForAutoBalance | Grace period in seconds before auto-balance begins at match start | 30 |
 | StartOfMatchGracePeriodForTeamSwitching | Grace period in seconds for team switching at match start | 0 |
+| bUseStrictTeamBalanceEnforcement | Enables or disables strict team balance enforcement | False |
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -115,6 +116,7 @@ AutoBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference
 AutoBalanceOptions=(MinNumPlayers=24,MaxNumPlayers=999,AllowedNumPlayersDifference=2)
 StartOfMatchGracePeriodForAutoBalance=30
 StartOfMatchGracePeriodForTeamSwitching=0
+bUseStrictTeamBalanceEnforcement=False
 ```
 
 ### [/Script/TBL.TBLTitleScreen] Section
