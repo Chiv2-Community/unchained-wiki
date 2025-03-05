@@ -13,15 +13,6 @@ This guide explains how to configure network settings for your Chivalry 2 Unchai
 
 ### IpNetDriver
 
-```ini
-[/Script/OnlineSubsystemUtils.IpNetDriver]
-NetServerMaxTickRate=60
-MaxClientRate=100000
-MaxInternetClientRate=100000
-InitialConnectTimeout=300.0
-ConnectionTimeout=300.0
-```
-
 #### Key Network Parameters
 
 | Parameter | Description | Recommended Values |
@@ -36,6 +27,15 @@ ConnectionTimeout=300.0
 | SpawnPrioritySeconds | Spawn priority window | 1.0 |
 | ServerTravelPause | Map change pause | 4.0 |
 
+```ini
+[/Script/OnlineSubsystemUtils.IpNetDriver]
+NetServerMaxTickRate=60
+MaxClientRate=100000
+MaxInternetClientRate=100000
+InitialConnectTimeout=300.0
+ConnectionTimeout=300.0
+```
+
 !!! Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
 
 For more UE4 network settings, see the [Unreal Engine Networking Documentation](https://docs.unrealengine.com/4.25/en-US/InteractiveExperiences/Networking/Overview/).
@@ -44,16 +44,33 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ### [/Script/Engine.GameSession] Section
 
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| MaxPlayers | Maximum number of players allowed on the server | 256 |
+
 ```ini
 [/Script/Engine.GameSession]
 MaxPlayers=256
 ```
 
+### [/Script/TBL.TBLGameMode] Section
+
+#### TBLGameMode Parameters
+
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
-| MaxPlayers | Maximum number of players allowed on the server | 256 |
-
-### [/Script/TBL.TBLGameMode] Section
+| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
+| BotBackfillEnabled | Enables or disables bot backfill feature | True |
+| BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
+| BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
+| BotBackfillHighPlayers | Player count threshold for minimum bot spawning | 30 |
+| BotBackfillHighBots | Number of bots to spawn when player count is at or above the high threshold | 0 |
+| MinTimeBeforeStartingMatch | Minimum warmup time in seconds before a match starts | 1.000000 |
+| IdleKickTimerSpectate | Time in seconds before an idle player is moved to spectator (0 to disable) | 0.000000 |
+| IdleKickTimerDisconnect | Time in seconds before an idle player is disconnected (0 to disable) | 0.000000 |
+| Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
+| MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
+| bHorseCompatibleServer | Enables or disables horses on the server | true |
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -84,20 +101,3 @@ MapListIndex=-1
 # Horse Settings
 bHorseCompatibleServer=true
 ```
-
-#### TBLGameMode Parameters
-
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
-| BotBackfillEnabled | Enables or disables bot backfill feature | True |
-| BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
-| BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
-| BotBackfillHighPlayers | Player count threshold for minimum bot spawning | 30 |
-| BotBackfillHighBots | Number of bots to spawn when player count is at or above the high threshold | 0 |
-| MinTimeBeforeStartingMatch | Minimum warmup time in seconds before a match starts | 1.000000 |
-| IdleKickTimerSpectate | Time in seconds before an idle player is moved to spectator (0 to disable) | 0.000000 |
-| IdleKickTimerDisconnect | Time in seconds before an idle player is disconnected (0 to disable) | 0.000000 |
-| Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
-| MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
-| bHorseCompatibleServer | Enables or disables horses on the server | true |
