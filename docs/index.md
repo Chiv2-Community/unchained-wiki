@@ -25,24 +25,24 @@ Launch Chivalry 2 (Torn Banner Official) for the standard, unmodified game exper
 
 #### Client-Side Modding Mode
 Run Chivalry 2 with client-side mods on official multiplayer servers. These mods can cosmetically change or enhance the game for you. Examples include:
-- **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
-- **nightlife:** Enable nighttime versions of all Chivalry 2 maps.
-- [in development] Detailed logging of in-game events for statistics and score tracking.
-- [in development] Enhancements for competitive and community events.
+* **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
+* **nightlife:** Enable nighttime versions of all Chivalry 2 maps.
+* [in development] Detailed logging of in-game events for statistics and score tracking.
+* [in development] Enhancements for competitive and community events.
 
 #### Unchained Multiplayer Mode 
 Connect to custom Unchained modded servers using the Chivalry 2 Unchained server list. This mode supports standalone server-hosted mods that can introduce major gameplay changes, such as:
-- Custom Maps, Weapons, Classes, etc.
-- 'Giant slayers' mode.
-- Potential PvE cooperative horde mode.
-- Mods which require all clients to have the mod to play.
+* Custom Maps, Weapons, Classes, etc.
+* 'Giant slayers' mode.
+* Potential PvE cooperative horde mode.
+* Mods which require all clients to have the mod to play.
 
 #### Unchained Server Hosting Mode
 Host your own Chivalry 2 servers with custom map rotations, mods and whatever network settings you desire. You can enable higher tickrates, more difficult bots, set restrictions on classes and more.
 
 ## Community and Support
 
-Connect with other Chivalry 2 Unchained users, get support, share your mods, and stay updated with the latest news and events through our Discord community.
+Connect with other Chivalry 2 Unchained users, get support, share your mods, and stay updated with the latest news and events through our [Discord community](https://discord.gg/chiv2unchained).
 
 ## Open Source
 
