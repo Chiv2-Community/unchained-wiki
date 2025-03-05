@@ -101,3 +101,17 @@ MapListIndex=-1
 # Horse Settings
 bHorseCompatibleServer=true
 ```
+
+### [/Script/TBL.TBLTitleScreen] Section
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| bSavedHasAgreedToTOS | Bypasses the Terms of Service agreement prompt | True |
+
+```ini
+[/Script/TBL.TBLTitleScreen]
+bSavedHasAgreedToTOS=True
+```
+
+!!! note "Important"
+    This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt.
