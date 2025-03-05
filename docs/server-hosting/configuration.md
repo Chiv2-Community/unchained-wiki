@@ -2,7 +2,8 @@
 
 This guide explains how to configure network settings for your Chivalry 2 Unchained server using Unreal Engine 4's configuration system.
 
-!!! Ensure your server has been shut down before making any ini modifications! Failure to do so will cause your changes to be overwritten!
+!!! warning "Important"
+    Ensure your server has been shut down before making any ini modifications! Failure to do so will cause your changes to be overwritten!
 
 ## Configuration File Locations
 
@@ -37,7 +38,8 @@ This guide explains how to configure network settings for your Chivalry 2 Unchai
     ConnectionTimeout=300.0
     ```
 
-!!! Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
+!!! info "Note"
+    Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
 
 For more UE4 network settings, see the [Unreal Engine Networking Documentation](https://docs.unrealengine.com/4.25/en-US/InteractiveExperiences/Networking/Overview/).
 
@@ -140,7 +142,8 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
     bSavedHasAgreedToTOS=True
     ```
 
-!!! This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt. If your server isn't starting, this is likely the cause.
+!!! note "Important"
+    This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt. If your server isn't starting, this is likely the cause.
 
 ### `[/Script/TBL.LTSGameMode]` Section
 
