@@ -36,7 +36,7 @@ markdown_extensions:
       generic: true
   # - pymdownx.superfences
   - admonition
-  # - pymdownx.details
+  - pymdownx.details
   # - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
