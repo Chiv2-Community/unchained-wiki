@@ -11,8 +11,8 @@ The easiest way to install and manage mods is through the Unchained Launcher's b
 3. Browse the list of available mods
 4. Select a mod, then select `Enable` to enable the latest version.
 5. To select a specific version of a mod:
-   - Click on the version dropdown menu next to the mod
-   - Select your desired version from the list
+    - Click on the version dropdown menu next to the mod
+    - Select your desired version from the list
 
 The Mod Manager automatically handles downloading, installation, and version management for you. It will also notify you when updates are available for your installed mods.
 
@@ -21,8 +21,8 @@ The Mod Manager automatically handles downloading, installation, and version man
 If you prefer to install mods manually or have a mod that isn't available in the Mod Manager, follow these steps:
 
 1. Locate your Chivalry 2 installation directory
-  - Common locations are `C:\Program Files\Epic Games\Chivalry2` or `C:\Program Files (x86)\Steam\steamapps\common\Chivalry 2`. If you use custom install directories their location 
-    will be different.
+    - Common locations are `C:\Program Files\Epic Games\Chivalry2` or `C:\Program Files (x86)\Steam\steamapps\common\Chivalry 2`. If you use custom install directories their location 
+      will be different.
    
 2. Navigate to the Paks directory:
    ```
@@ -30,8 +30,8 @@ If you prefer to install mods manually or have a mod that isn't available in the
    ```
 
 3. Place the mod `.pak` file directly into this directory
-   - Ensure the file has the correct `.pak` extension
-   - Do not modify the filename unless instructed to do so by the mod creator
+    - Ensure the file has the correct `.pak` extension
+    - Do not modify the filename unless instructed to do so by the mod creator
 
 4. Launch the game through the Unchained Launcher to use the installed mods
 

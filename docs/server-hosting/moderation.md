@@ -7,17 +7,17 @@ This guide explains how to moderate your Chivalry 2 Unchained server by managing
 To kick or ban a player from your server, follow these steps:
 
 1. In the server's RCON console, run the `listplayers` command
-   - This copies all player information to your clipboard
+    - This copies all player information to your clipboard
 
 2. Open a text editor (like Notepad), right-click, and select "Paste"
-   - This will show a list of all players with their IDs
+    - This will show a list of all players with their IDs
 
 3. Find the ID of the player you want to moderate
-   - The ID appears to the right of their username in ALL CAPS
+    - The ID appears to the right of their username in ALL CAPS
 
 4. In the RCON console, use one of these commands:
-   - To kick: `KickById PLAYER_ID`
-   - To ban: `BanById PLAYER_ID`
+    - To kick: `KickById PLAYER_ID`
+    - To ban: `BanById PLAYER_ID`
 
 5. Press Enter to execute the command
 
