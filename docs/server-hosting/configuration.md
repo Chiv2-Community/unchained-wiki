@@ -103,7 +103,13 @@ Maplist=FFA_Wardenglade
 Maplist=FFA_TournamentGrounds
 Maplist=FFA_Courtyard
 Maplist=FFA_Galencourt
-MapListIndex=-1
+# LTS Maps
+Maplist=LTS_Falmire
+Maplist=LTS_Courtyard
+Maplist=LTS_Galencourt
+Maplist=LTS_TournamentGrounds
+Maplist=LTS_Wardenglade
+MapListIndex=1
 
 # Horse Settings
 bHorseCompatibleServer=true
@@ -147,6 +153,36 @@ Rounds=39
 
 !!! tip "Rounds Calculation"
     Set Rounds to N*2-1 where N is the number of rounds you want the game to go to. For example, if you want first to 20, use N=20 for Rounds=39.
+
+### [/Script/TBL.ArenaGameMode] Section
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| Rounds | Total number of rounds to play (should be N*2-1 where N is the number of rounds to win) | 39 |
+| RoundTimeLimit | Time limit in seconds for each round | 300 |
+| bClearWeaponsPostRound | Whether to clear weapons after each round | True |
+| bClearHorsesPostRound | Whether to clear horses after each round | True |
+| bResetTaggedActorsPostRound | Whether to reset tagged actors after each round | True |
+| bUsePreCountdownForCustomizationLoading | Whether to use pre-countdown for customization loading | True |
+| MinTimeBeforeStartingMatch | Minimum time in seconds before starting the match | 5 |
+| MaxTimeBeforeStartingMatch | Maximum time in seconds before starting the match | 10 |
+| TeamLives | Extra lives given to a team (per player) | 0 |
+
+```ini
+[/Script/TBL.ArenaGameMode]
+Rounds=39
+RoundTimeLimit=300
+bClearWeaponsPostRound=True
+bClearHorsesPostRound=True
+bResetTaggedActorsPostRound=True
+bUsePreCountdownForCustomizationLoading=True
+MinTimeBeforeStartingMatch=5
+MaxTimeBeforeStartingMatch=10
+TeamLives=0
+```
+
+!!! info "TeamLives Explanation"
+    TeamLives represents extra lives a team gets. For example, in a 6v6 match with TeamLives=1, the first player who dies on each team gets an extra life. With TeamLives=2, the first two players who die get an extra life, and so on.
 
 ## GameUserSettings.ini Settings
 
