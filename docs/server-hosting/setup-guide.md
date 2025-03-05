@@ -1,7 +1,7 @@
 # Setting up an Unchained Server
 
 !!! warning "Important"
-    Excessive modification of ini files or other mods before starting this may cause issues. If you have problems, try completely deleting `%localappdata%/Chivalry 2` and reinstalling Chivalry 2 before doing this tutorial again.
+    Excessive modification of ini files or other mods before starting this may cause issues. If you have problems, try completely deleting `%localappdata%/Chivalry 2` and reinstalling Chivalry 2 before doing this tutorial again. Frequently back-up known-good INI configurations as you make changes to avoid having to start over.
 
 ## Definitions
 
