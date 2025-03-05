@@ -2,13 +2,9 @@
 
 This guide explains how to configure network settings for your Chivalry 2 Unchained server using Unreal Engine 4's configuration system.
 
+All config files can be found in `%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Engine.ini`
+
 !!! Ensure your server has been shut down before making any ini modifications! Failure to do so will cause your changes to be overwritten!
-
-## Engine.ini Location
-
-```
-%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Engine.ini
-```
 
 ## Engine.ini Settings
 
@@ -40,12 +36,6 @@ ConnectionTimeout=300.0
 !!! Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
 
 For more UE4 network settings, see the [Unreal Engine Networking Documentation](https://docs.unrealengine.com/4.25/en-US/InteractiveExperiences/Networking/Overview/).
-
-## Game.ini Location
-
-```
-%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Game.ini
-```
 
 ## Game.ini Settings
 
