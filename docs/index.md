@@ -4,66 +4,44 @@ Chivalry 2 Unchained is a modding community for Chivalry 2 that empowers players
 
 Through the Unchained Launcher, players can decide their preferred mode of Chivalry 2 gameplay; while the launcher is installed, you can continue to play regular Chivalry 2 if desired.
 
-## Join Our Discord
+## Quick Links
 
-Connect with other Chivalry 2 Unchained users, get support, share your mods, and stay updated with the latest news and events.
-
+[Download the Launcher](https://github.com/Chiv2-Community/UnchainedLauncher/releases/latest/download/UnchainedLauncher.exe){ .md-button }
+[Installation Guide](installation.md){ .md-button }
 [Join our Discord](https://discord.gg/chiv2unchained){ .md-button }
 
-## Getting Started
+## What Can You Do With Chivalry 2 Unchained?
 
-Since Chivalry 2 does not support mods by default, the game must be launched via the Unchained Launcher. Whether you want to play with regular Chivalry with client-side mods, host or play on your own servers, or develop your own mods, the launcher is your gateway.
+Since Chivalry 2 does not support mods by default, the game must be launched via the Unchained Launcher. Our launcher is your gateway to an enhanced Chivalry 2 experience.
 
-The Unchained launcher integrates with a repository of community-made mods to easily enable, disable or update Chivalry 2 mods easily. 
+### Play Your Way
 
-The Unchained Launcher also contains the capability to manage server hosting settings and run a 'headless' server for Chivalry 2 for play on local LAN or via the internet with other Chivalry Unchained players.
+The Unchained Launcher offers multiple ways to enjoy Chivalry 2:
 
-## Chivalry 2 Unchained Launcher Modes of Operation
-
-### Official Unmodded Mode**  
+#### Official Unmodded Mode
 Launch Chivalry 2 (Torn Banner Official) for the standard, unmodified game experience.
 
-### Client-Side Modding Mode
+#### Client-Side Modding Mode
 Run Chivalry 2 with client-side mods on official multiplayer servers. These mods can cosmetically change or enhance the game for you. Examples include:
 - **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
 - **nightlife:** Enable nighttime versions of all Chivalry 2 maps.
 - [in development] Detailed logging of in-game events for statistics and score tracking.
 - [in development] Enhancements for competitive and community events.
 
-
-### Unchained Multiplayer Mode 
+#### Unchained Multiplayer Mode 
 Connect to custom Unchained modded servers using the Chivalry 2 Unchained server list. This mode supports standalone server-hosted mods that can introduce major gameplay changes, such as:
 - Custom Maps, Weapons, Classes, etc.
 - 'Giant slayers' mode.
 - Potential PvE cooperative horde mode.
 - Mods which require all clients to have the mod to play.
 
-### Unchained Server Hosting Mode
+#### Unchained Server Hosting Mode
 Host your own Chivalry 2 servers with custom map rotations, mods and whatever network settings you desire. You can enable higher tickrates, more difficult bots, set restrictions on classes and more.
 
-## Unchained Launcher Installation Process
+## Community and Support
 
-[Download the Unchained Launcher](https://github.com/Chiv2-Community/UnchainedLauncher/releases/latest/download/UnchainedLauncher.exe){ .md-button }
+Connect with other Chivalry 2 Unchained users, get support, share your mods, and stay updated with the latest news and events through our Discord community.
 
-### Downloading the Launcher
+## Open Source
 
-To download the Unchained Launcher, click on the link above. Your browser may block the download; if it does, allow the download manually by clicking on the notification and selecting the option to keep the file.
-
-### Running the Launcher
-
-Once downloaded, locate the `UnchainedLauncher.exe` file and run it. Windows SmartScreen, a built-in security feature, checks downloaded files against a list of known safe programs. Because our launcher is new and not yet widely recognized, it might trigger a warning.
-
-#### How to Proceed beyond smartscreen
-If you see a SmartScreen warning:
-1. Click **"More info"**.
-2. Click **"Run anyway"** to continue with the installation.
-
-## Security Concerns
-### Why Windows SmartScreen Shows a Warning
-Windows SmartScreen assesses the reputation of software to help protect your computer. It checks reputation and signing details rather than inspecting the file's internal code. Because our launcher uses DLL injection—a necessary process for enabling mods in Chivalry 2—and is new, SmartScreen may flag it as unfamiliar, even though it is safe.
-
-### Why Security Systems May Flag the Launcher
-Some security systems might flag the Unchained Launcher as potentially malicious because it involves DLL injection into Chivalry 2. This process is required to enable mods and server hosting. While DLL injection is sometimes associated with malicious behavior, our launcher is entirely safe and not intended for malicious use.
-
-### Open Source and Auditable Code
-All the code used in Chivalry 2 Unchained is open source and available for review. You can inspect our DLLs and related tooling on the [Chiv2-Community GitHub organization](https://github.com/chiv2-community). We encourage you to audit the code to verify its safety.
+All the code used in Chivalry 2 Unchained is open source and available for review. You can inspect our DLLs and related tooling on the [Chiv2-Community GitHub organization](https://github.com/chiv2-community).
