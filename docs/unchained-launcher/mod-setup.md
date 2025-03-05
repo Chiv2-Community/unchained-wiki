@@ -1,4 +1,4 @@
-# Mod Installation Guide
+# Mod Setup Guide
 
 This guide explains how to install mods for Chivalry 2 Unchained. Before proceeding, make sure you have already installed the Unchained Launcher by following the [Installation Guide](installation.md).
 
