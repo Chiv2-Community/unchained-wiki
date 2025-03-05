@@ -173,20 +173,20 @@ On the initial start of your server, these messages are normal. The console atte
 
 1. Try sending a console command
    
-   **If you get an error in the server console:**
-   - This means that the Chivalry process is not listening on RCON
-   - This indicates a plugin loading issue
-   - Close the server windows and re-start it
-   - If the issue persists, contact the Unchained Team for help
+    **If you get an error in the server console:**
+    - This means that the Chivalry process is not listening on RCON
+    - This indicates a plugin loading issue
+    - Close the server windows and re-start it
+    - If the issue persists, contact the Unchained Team for help
    
-   **If you see the same console command appear in the debug output window:**
-   - This indicates that the plugins are loaded, but the server has not yet loaded into the map to listen on the A2S port
+    **If you see the same console command appear in the debug output window:**
+    - This indicates that the plugins are loaded, but the server has not yet loaded into the map to listen on the A2S port
    
-   - Check if there is a "Substituted console command" line in the debug output
-     - If there is one, contact the Unchained Team—this indicates there is an issue in the Unchained-Mods and map loading machinery
-     - If there is no "Substituted console command" line, this suggests an ini misconfiguration
-     - Go to the *Necessary ini Tweaks* section and ensure the required ini lines are present
-     - If you keep having trouble, contact the Unchained Team
+    - Check if there is a "Substituted console command" line in the debug output
+        - If there is one, contact the Unchained Team—this indicates there is an issue in the Unchained-Mods and map loading machinery
+        - If there is no "Substituted console command" line, this suggests an ini misconfiguration
+        - Go to the *Necessary ini Tweaks* section and ensure the required ini lines are present
+        - If you keep having trouble, contact the Unchained Team
 
 ### Severe Network Lag
 

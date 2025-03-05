@@ -38,10 +38,12 @@ If you prefer to install mods manually or have a mod that isn't available in the
 ## Managing Manually Installed Mods
 
 To disable a manually installed mod:
+
 - Remove the `.pak` file from the Paks directory, or
 - Rename the file by adding `.disabled` to the end (e.g., `MyMod.pak.disabled`)
 
 To update a manually installed mod:
+
 - Delete the old version of the mod
 - Place the new version in the Paks directory
 
@@ -57,5 +59,6 @@ If you encounter issues with mods:
 ## Finding Mods
 
 Mods can be found:
+
 - In the Unchained Launcher's Mod Manager
 - Through our [Discord](https://discord.gg/chiv2unchained) community

@@ -44,6 +44,7 @@ When you first run the launcher, it will:
 
 ### Mod Management
 The Unchained launcher integrates with a repository of community-made mods, allowing you to:
+
 - Browse available mods
 - Enable or disable mods with a single click
 - Automatically update mods when new versions are available
@@ -51,6 +52,7 @@ The Unchained launcher integrates with a repository of community-made mods, allo
 
 ### Server Hosting
 The launcher provides comprehensive server hosting capabilities:
+
 - Run a 'headless' server for Chivalry 2 on local LAN or via the internet
 - Configure custom map rotations
 - Adjust network settings including tickrate
