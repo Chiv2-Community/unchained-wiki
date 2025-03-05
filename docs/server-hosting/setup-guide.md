@@ -44,6 +44,68 @@ bSavedHasAgreedToTOS=True
 
 **NOTE:** If the TBLGameInstance or TBLTitleScreen sections are already present somewhere in the file, add the lines to those sections instead of making a duplicate.
 
+## Recommended Configuration Settings
+
+While the above settings are the minimum required to get your server running, you'll likely want to customize your server further. Here are some important configuration values to consider:
+
+### Server Identity and Player Limits
+
+In `Game.ini`, under the `[/Script/TBL.TBLGameMode]` section:
+
+```ini
+# Server Name (displayed in-game)
+ServerName=My Awesome Server
+ServerIdentifier=MyServer
+
+# Player Limits
+[/Script/Engine.GameSession]
+MaxPlayers=64
+```
+
+### Performance and Synchronization
+
+In `GameUserSettings.ini`, under the `[/Script/TBL.TBLGameUserSettings]` section:
+
+```ini
+# FPS settings (important for netcode synchronization)
+MaxFPS=80
+FrameRateLimit=80.000000
+```
+
+!!! important
+    The FPS setting is critical for proper gameplay. Players should match their FPS to your server's setting to avoid desync issues. Advertise your FPS cap in your server name.
+
+### Bot Backfill
+
+In `Game.ini`, under the `[/Script/TBL.TBLGameMode]` section:
+
+```ini
+# Bot settings
+BotBackfillEnabled=True
+BotBackfillLowPlayers=10
+BotBackfillLowBots=12
+BotBackfillHighPlayers=30
+BotBackfillHighBots=0
+```
+
+### Team Balance
+
+In `Game.ini`, under the `[/Script/TBL.TBLGameMode]` section:
+
+```ini
+# Team balance settings
+TeamBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=32,AllowedNumPlayersDifference=2)
+TeamBalanceOptions=(MinNumPlayers=32,MaxNumPlayers=48,AllowedNumPlayersDifference=3)
+TeamBalanceOptions=(MinNumPlayers=48,MaxNumPlayers=999,AllowedNumPlayersDifference=3)
+AutoBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1)
+AutoBalanceOptions=(MinNumPlayers=24,MaxNumPlayers=999,AllowedNumPlayersDifference=2)
+StartOfMatchGracePeriodForAutoBalance=30
+StartOfMatchGracePeriodForTeamSwitching=0
+bUseStrictTeamBalanceEnforcement=False
+```
+
+For a complete list of configuration options and detailed explanations, see our [Server Configuration Guide](configuration.md).
+
 ## Launching
 
 Go back to the server tab in the Unchained Launcher and click "Launch Headless". You may be prompted to download several files: Click "Yes". Two windows will open:
@@ -97,3 +159,19 @@ On the initial start of your server, these messages are normal. The console atte
 2. Netcode is very sensitive to host and client FPS. It is strongly recommended that you cap the fps of the host instance, and advertise that fps in your server description. Clients should lock their fps to match. If the host is running at, for example, 120fps:
    * Clients running at lower (<120) fps will get delayed hits, swing-throughs, and other netcode issues.
    * Clients running at higher (>120) fps will get accelerated/early hits.
+
+## Quick Configuration Checklist
+
+Before launching your server, ensure you've configured these essential settings:
+
+- [ ] Set `FirstLoadCompleted=True` and `bSavedHasAgreedToTOS=True` in Game.ini
+- [ ] Configure your server name and identifier
+- [ ] Set appropriate max player count
+- [ ] Configure FPS cap (recommended: 60-80)
+- [ ] Set up map rotation
+- [ ] Configure team balance settings if hosting team-based modes
+- [ ] Forward required ports (Game Port and Ping Port)
+
+For LTS/Arena servers, also configure:
+- [ ] Set appropriate round count and time limits
+- [ ] Configure team lives if desired
