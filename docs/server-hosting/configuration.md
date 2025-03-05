@@ -40,3 +40,73 @@ ConnectionTimeout=300.0
 !!! Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
 
 For more UE4 network settings, see the [Unreal Engine Networking Documentation](https://docs.unrealengine.com/4.25/en-US/InteractiveExperiences/Networking/Overview/).
+
+## Game.ini Location
+
+```
+%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Game.ini
+```
+
+## Game.ini Settings
+
+### Increase Max Player Count
+
+```ini
+[/Script/Engine.GameSession]
+MaxPlayers=256
+```
+
+### Enable Bot Backfill
+
+```ini
+[/Script/TBL.TBLGameMode]
+BotBackfillEnabled=True
+BotBackfillLowPlayers=10
+BotBackfillLowBots=12
+BotBackfillHighPlayers=30
+BotBackfillHighBots=0
+```
+
+### Change Server Name
+
+The name displayed in upper left corner when you press Tab ingame
+
+```ini
+[/Script/TBL.TBLGameMode]
+ServerName=My Local server
+```
+
+### Reduce Warmup Time
+
+```ini
+[/Script/TBL.TBLGameMode]
+MinTimeBeforeStartingMatch=1.000000
+```
+
+### Disable/Change AFK Timers
+
+```ini
+[/Script/TBL.TBLGameMode]
+IdleKickTimerSpectate=0.000000
+IdleKickTimerDisconnect=0.000000
+```
+
+### Change Map List
+
+Default map list below:
+
+```ini
+[/Script/TBL.TBLGameMode]
+Maplist=FFA_Wardenglade
+Maplist=FFA_TournamentGrounds
+Maplist=FFA_Courtyard
+Maplist=FFA_Galencourt
+MapListIndex=-1
+```
+
+### Allow Horses
+
+```ini
+[/Script/TBL.TBLGameMode]
+bHorseCompatibleServer=true
+```
