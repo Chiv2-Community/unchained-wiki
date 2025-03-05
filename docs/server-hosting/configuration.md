@@ -2,9 +2,12 @@
 
 This guide explains how to configure network settings for your Chivalry 2 Unchained server using Unreal Engine 4's configuration system.
 
-All config files can be found in `%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Engine.ini`
-
 !!! Ensure your server has been shut down before making any ini modifications! Failure to do so will cause your changes to be overwritten!
+
+## Configuration File Locations
+
+- Engine.ini: `%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Engine.ini`
+- Game.ini: `%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor/Game.ini`
 
 ## Engine.ini Settings
 
@@ -39,14 +42,18 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ## Game.ini Settings
 
-### Increase Max Player Count
+### Player Count Configuration
 
 ```ini
 [/Script/Engine.GameSession]
 MaxPlayers=256
 ```
 
-### Enable Bot Backfill
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| MaxPlayers | Maximum number of players allowed on the server | 256 |
+
+### Bot Backfill Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -57,23 +64,37 @@ BotBackfillHighPlayers=30
 BotBackfillHighBots=0
 ```
 
-### Change Server Name
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| BotBackfillEnabled | Enables or disables bot backfill feature | True |
+| BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
+| BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
+| BotBackfillHighPlayers | Player count threshold for minimum bot spawning | 30 |
+| BotBackfillHighBots | Number of bots to spawn when player count is at or above the high threshold | 0 |
 
-The name displayed in upper left corner when you press Tab ingame
+### Server Name Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
 ServerName=My Local server
 ```
 
-### Reduce Warmup Time
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
+
+### Match Timing Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
 MinTimeBeforeStartingMatch=1.000000
 ```
 
-### Disable/Change AFK Timers
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| MinTimeBeforeStartingMatch | Minimum warmup time in seconds before a match starts | 1.000000 |
+
+### AFK Timer Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -81,9 +102,12 @@ IdleKickTimerSpectate=0.000000
 IdleKickTimerDisconnect=0.000000
 ```
 
-### Change Map List
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| IdleKickTimerSpectate | Time in seconds before an idle player is moved to spectator (0 to disable) | 0.000000 |
+| IdleKickTimerDisconnect | Time in seconds before an idle player is disconnected (0 to disable) | 0.000000 |
 
-Default map list below:
+### Map List Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -94,9 +118,18 @@ Maplist=FFA_Galencourt
 MapListIndex=-1
 ```
 
-### Allow Horses
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
+| MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
+
+### Horse Configuration
 
 ```ini
 [/Script/TBL.TBLGameMode]
 bHorseCompatibleServer=true
 ```
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| bHorseCompatibleServer | Enables or disables horses on the server | true |
