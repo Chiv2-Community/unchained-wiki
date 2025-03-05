@@ -16,7 +16,7 @@ Excessive modification of ini files or other mods before starting this may cause
 ## Requirements
 
 Before starting, ensure you have:
-- A public IP address that you can forward ports to
+- A public IP address that you can forward ports to (if you want to host a public server on the internet)
 - A bare-metal NIC (Network Interface Card) on the host machine
 - Chivalry 2 installed on the host machine
 
@@ -25,14 +25,14 @@ Before starting, ensure you have:
 1. Install Unchained on the host as you normally would. Make sure Unchained is replacing the normal Chivalry 2 launcher. (You will be prompted to do this on install)
 2. Go to the 'Server' tab of the Unchained Launcher and enter your server's name and other configuration
 
-If Chivalry 2 has not run on this machine before, or you deleted `%localappdata%/Chivalry 2`:
+If Chivalry 2 has not run on this machine before, or you deleted `%localappdata%/Chivalry 2/Saved_UnchainedServer`:
 Click "Launch Headless" in the bottom right. Let this run for ~20 seconds to ensure that ini files are generated before closing all windows that opened. You may be prompted to download several files: Click "Yes"
 
-**IMPORTANT FOR NFO HOSTS:** If you are using NFO hosting, there is a port conflict with UDP/7777. Change your game port to 7778 in the server tab. No other action is needed. If you do not do this then you will experience extreme gameplay degradation.
+**IMPORTANT FOR SOME HOSTS (Such as NFO):** If you are using NFO hosting, there is a port conflict with UDP/7777. Change your game port to 7778 in the server tab. No other action is needed. If you do not do this then you will experience extreme gameplay degradation.
 
 ## Necessary ini Tweaks
 
-There are two ini settings that must be set in order to successfully host. Navigate to `%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor` in your file browser and open `Game.ini`. Add the following lines to the top of the file:  
+There are two ini settings that must be set in order to successfully host. Navigate to `%localappdata%/Chivalry 2/Saved_UnchainedServer/Config/WindowsNoEditor` in your file browser and open `Game.ini`. Add the following lines to the top of the file:  
 
 ```ini
 [/Script/TBL.TBLGameInstance]
