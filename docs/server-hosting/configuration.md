@@ -72,6 +72,10 @@ MaxPlayers=256
 | Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
 | MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
 | bHorseCompatibleServer | Enables or disables horses on the server | true |
+| TeamBalanceOptions | Team balance settings for player count ranges (MinNumPlayers, MaxNumPlayers, AllowedNumPlayersDifference) | (MinNumPlayers=0,MaxNumPlayers=32,AllowedNumPlayersDifference=2) |
+| AutoBalanceOptions | Auto-balance settings for player count ranges (MinNumPlayers, MaxNumPlayers, AllowedNumPlayersDifference) | (MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1) |
+| StartOfMatchGracePeriodForAutoBalance | Grace period in seconds before auto-balance begins at match start | 30 |
+| StartOfMatchGracePeriodForTeamSwitching | Grace period in seconds for team switching at match start | 0 |
 
 ```ini
 [/Script/TBL.TBLGameMode]
@@ -102,6 +106,15 @@ MapListIndex=-1
 
 # Horse Settings
 bHorseCompatibleServer=true
+
+# Team Balance Settings
+TeamBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=32,AllowedNumPlayersDifference=2)
+TeamBalanceOptions=(MinNumPlayers=32,MaxNumPlayers=48,AllowedNumPlayersDifference=3)
+TeamBalanceOptions=(MinNumPlayers=48,MaxNumPlayers=999,AllowedNumPlayersDifference=3)
+AutoBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1)
+AutoBalanceOptions=(MinNumPlayers=24,MaxNumPlayers=999,AllowedNumPlayersDifference=2)
+StartOfMatchGracePeriodForAutoBalance=30
+StartOfMatchGracePeriodForTeamSwitching=0
 ```
 
 ### [/Script/TBL.TBLTitleScreen] Section
