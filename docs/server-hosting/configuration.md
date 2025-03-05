@@ -14,8 +14,6 @@ This guide explains how to configure network settings for your Chivalry 2 Unchai
 
 ### `[/Script/OnlineSubsystemUtils.IpNetDriver]`
 
-#### Key Network Parameters
-
 | Parameter | Description | Recommended Values |
 |-----------|-------------|-------------------|
 | NetServerMaxTickRate | Server updates per second | 30 (low), 60 (balanced), 120 (high) |
