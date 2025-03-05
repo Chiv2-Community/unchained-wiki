@@ -132,3 +132,21 @@ Rounds=39
 
 !!! tip "Rounds Calculation"
     Set Rounds to N*2-1 where N is the number of rounds you want the game to go to. For example, if you want first to 20, use N=20 for Rounds=39.
+
+## GameUserSettings.ini Settings
+
+### [/Script/TBL.TBLGameUserSettings] Section
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| MaxFPS | Maximum frames per second for the server | 80 |
+| FrameRateLimit | Frame rate limit in floating point format | 80.000000 |
+
+```ini
+[/Script/TBL.TBLGameUserSettings]
+MaxFPS=80
+FrameRateLimit=80.000000
+```
+
+!!! important "FPS Synchronization"
+    MaxFPS is important and should be advertised in your server name. Players will need to match this FPS to avoid desync issues.
