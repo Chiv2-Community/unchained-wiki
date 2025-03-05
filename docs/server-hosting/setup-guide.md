@@ -53,6 +53,8 @@ Go back to the server tab in the Unchained Launcher and click "Launch Headless".
 
 These commands are from the same list as the in-game console.
 
+For advanced server configuration options, including network settings, see our [Server Configuration Guide](configuration.md).
+
 ## Port Forwarding
 
 **NFO Hosts:** NFO servers have automatic port forwarding—you don't have to do anything here.

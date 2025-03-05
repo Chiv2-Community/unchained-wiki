@@ -9,6 +9,7 @@ Through the Unchained Launcher, players can decide their preferred mode of Chiva
 [Download the Launcher](https://github.com/Chiv2-Community/UnchainedLauncher/releases/latest/download/UnchainedLauncher.exe){ .md-button }
 [Installation Guide](installation.md){ .md-button }
 [Server Hosting Guide](server-hosting/setup-guide.md){ .md-button }
+[Server Configuration](server-hosting/configuration.md){ .md-button }
 [Join our Discord](https://discord.gg/chiv2unchained){ .md-button }
 
 
