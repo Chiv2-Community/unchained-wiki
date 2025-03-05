@@ -40,9 +40,22 @@ When you first run the launcher, it will:
 2. Set up the necessary files for modding
 3. Present you with options for how you want to play
 
-## Launcher Features
+## Using the Launcher
 
-The Unchained launcher integrates with a repository of community-made mods to easily enable, disable or update Chivalry 2 mods. It also contains the capability to manage server hosting settings and run a 'headless' server for Chivalry 2 for play on local LAN or via the internet with other Chivalry Unchained players.
+### Mod Management
+The Unchained launcher integrates with a repository of community-made mods, allowing you to:
+- Browse available mods
+- Enable or disable mods with a single click
+- Automatically update mods when new versions are available
+- View mod descriptions and compatibility information
+
+### Server Hosting
+The launcher provides comprehensive server hosting capabilities:
+- Run a 'headless' server for Chivalry 2 on local LAN or via the internet
+- Configure custom map rotations
+- Adjust network settings including tickrate
+- Set gameplay restrictions and bot difficulty
+- Monitor server performance
 
 ## Need Help?
 

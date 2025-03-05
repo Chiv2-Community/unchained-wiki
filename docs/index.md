@@ -10,6 +10,8 @@ Through the Unchained Launcher, players can decide their preferred mode of Chiva
 [Installation Guide](installation.md){ .md-button }
 [Join our Discord](https://discord.gg/chiv2unchained){ .md-button }
 
+> **New to Chivalry 2 Unchained?** Check out our [Installation Guide](installation.md) to get started!
+
 ## What Can You Do With Chivalry 2 Unchained?
 
 Since Chivalry 2 does not support mods by default, the game must be launched via the Unchained Launcher. Our launcher is your gateway to an enhanced Chivalry 2 experience.
