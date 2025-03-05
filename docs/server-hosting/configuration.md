@@ -11,7 +11,7 @@ This guide explains how to configure network settings for your Chivalry 2 Unchai
 
 ## Engine.ini Settings
 
-### IpNetDriver
+### `[/Script/OnlineSubsystemUtils.IpNetDriver]`
 
 #### Key Network Parameters
 
@@ -27,14 +27,15 @@ This guide explains how to configure network settings for your Chivalry 2 Unchai
 | SpawnPrioritySeconds | Spawn priority window | 1.0 |
 | ServerTravelPause | Map change pause | 4.0 |
 
-```ini
-[/Script/OnlineSubsystemUtils.IpNetDriver]
-NetServerMaxTickRate=60
-MaxClientRate=100000
-MaxInternetClientRate=100000
-InitialConnectTimeout=300.0
-ConnectionTimeout=300.0
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/OnlineSubsystemUtils.IpNetDriver]
+    NetServerMaxTickRate=60
+    MaxClientRate=100000
+    MaxInternetClientRate=100000
+    InitialConnectTimeout=300.0
+    ConnectionTimeout=300.0
+    ```
 
 !!! Recommended values are still being worked on. Play with them and see what works best for you. Report your results to the community and we will update this doc!
 
@@ -42,18 +43,19 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ## Game.ini Settings
 
-### [/Script/Engine.GameSession] Section
+### `[/Script/Engine.GameSession]` Section
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
 | MaxPlayers | Maximum number of players allowed on the server | 256 |
 
-```ini
-[/Script/Engine.GameSession]
-MaxPlayers=256
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/Engine.GameSession]
+    MaxPlayers=256
+    ```
 
-### [/Script/TBL.TBLGameMode] Section
+### `[/Script/TBL.TBLGameMode]` Section
 
 #### TBLGameMode Parameters
 
@@ -78,83 +80,86 @@ MaxPlayers=256
 | StartOfMatchGracePeriodForTeamSwitching | Grace period in seconds for team switching at match start | 0 |
 | bUseStrictTeamBalanceEnforcement | Enables or disables strict team balance enforcement | False |
 
-```ini
-[/Script/TBL.TBLGameMode]
-# Server Name
-ServerName=Example
-ServerIdentifier=id
+??? example "Example Configuration"
+    ```ini
+    [/Script/TBL.TBLGameMode]
+    # Server Name
+    ServerName=Example
+    ServerIdentifier=id
 
-# Bot Backfill Settings
-BotBackfillEnabled=True
-BotBackfillLowPlayers=10
-BotBackfillLowBots=12
-BotBackfillHighPlayers=30
-BotBackfillHighBots=0
+    # Bot Backfill Settings
+    BotBackfillEnabled=True
+    BotBackfillLowPlayers=10
+    BotBackfillLowBots=12
+    BotBackfillHighPlayers=30
+    BotBackfillHighBots=0
 
-# Match Timing
-MinTimeBeforeStartingMatch=1.000000
+    # Match Timing
+    MinTimeBeforeStartingMatch=1.000000
 
-# AFK Timers
-IdleKickTimerSpectate=0.000000
-IdleKickTimerDisconnect=0.000000
+    # AFK Timers
+    IdleKickTimerSpectate=0.000000
+    IdleKickTimerDisconnect=0.000000
 
-# Map List
-Maplist=FFA_Wardenglade
-Maplist=FFA_TournamentGrounds
-Maplist=FFA_Courtyard
-Maplist=FFA_Galencourt
-# LTS Maps
-Maplist=LTS_Falmire
-Maplist=LTS_Courtyard
-Maplist=LTS_Galencourt
-Maplist=LTS_TournamentGrounds
-Maplist=LTS_Wardenglade
-MapListIndex=1
+    # Map List
+    Maplist=FFA_Wardenglade
+    Maplist=FFA_TournamentGrounds
+    Maplist=FFA_Courtyard
+    Maplist=FFA_Galencourt
+    # LTS Maps
+    Maplist=LTS_Falmire
+    Maplist=LTS_Courtyard
+    Maplist=LTS_Galencourt
+    Maplist=LTS_TournamentGrounds
+    Maplist=LTS_Wardenglade
+    MapListIndex=1
 
-# Horse Settings
-bHorseCompatibleServer=true
+    # Horse Settings
+    bHorseCompatibleServer=true
 
-# Team Balance Settings
-TeamBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=32,AllowedNumPlayersDifference=2)
-TeamBalanceOptions=(MinNumPlayers=32,MaxNumPlayers=48,AllowedNumPlayersDifference=3)
-TeamBalanceOptions=(MinNumPlayers=48,MaxNumPlayers=999,AllowedNumPlayersDifference=3)
-AutoBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1)
-AutoBalanceOptions=(MinNumPlayers=24,MaxNumPlayers=999,AllowedNumPlayersDifference=2)
-StartOfMatchGracePeriodForAutoBalance=30
-StartOfMatchGracePeriodForTeamSwitching=0
-bUseStrictTeamBalanceEnforcement=False
-```
+    # Team Balance Settings
+    TeamBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=32,AllowedNumPlayersDifference=2)
+    TeamBalanceOptions=(MinNumPlayers=32,MaxNumPlayers=48,AllowedNumPlayersDifference=3)
+    TeamBalanceOptions=(MinNumPlayers=48,MaxNumPlayers=999,AllowedNumPlayersDifference=3)
+    AutoBalanceOptions=(MinNumPlayers=0,MaxNumPlayers=24,AllowedNumPlayersDifference=1)
+    AutoBalanceOptions=(MinNumPlayers=24,MaxNumPlayers=999,AllowedNumPlayersDifference=2)
+    StartOfMatchGracePeriodForAutoBalance=30
+    StartOfMatchGracePeriodForTeamSwitching=0
+    bUseStrictTeamBalanceEnforcement=False
+    ```
 
-### [/Script/TBL.TBLTitleScreen] Section
+### `[/Script/TBL.TBLTitleScreen]` Section
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
 | bSavedHasAgreedToTOS | Bypasses the Terms of Service agreement prompt | True |
 
-```ini
-[/Script/TBL.TBLTitleScreen]
-bSavedHasAgreedToTOS=True
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/TBL.TBLTitleScreen]
+    bSavedHasAgreedToTOS=True
+    ```
 
 !!! This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt. If your server isn't starting, this is likely the cause.
 
-### [/Script/TBL.LTSGameMode] Section
+### `[/Script/TBL.LTSGameMode]` Section
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
 | PreCountdownDelay | Time in seconds before the match countdown begins | 5 |
 | Rounds | Total number of rounds to play (should be N*2-1 where N is the number of rounds to win) | 39 |
 
-```ini
-[/Script/TBL.LTSGameMode]
-PreCountdownDelay=5
-Rounds=39
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/TBL.LTSGameMode]
+    PreCountdownDelay=5
+    Rounds=39
+    ```
 
 !!! tip "Rounds Calculation"
     Set Rounds to N*2-1 where N is the number of rounds you want the game to go to. For example, if you want first to 20, use N=20 for Rounds=39.
 
-### [/Script/TBL.ArenaGameMode] Section
+### `[/Script/TBL.ArenaGameMode]` Section
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -168,36 +173,38 @@ Rounds=39
 | MaxTimeBeforeStartingMatch | Maximum time in seconds before starting the match | 10 |
 | TeamLives | Extra lives given to a team (per player) | 0 |
 
-```ini
-[/Script/TBL.ArenaGameMode]
-Rounds=39
-RoundTimeLimit=300
-bClearWeaponsPostRound=True
-bClearHorsesPostRound=True
-bResetTaggedActorsPostRound=True
-bUsePreCountdownForCustomizationLoading=True
-MinTimeBeforeStartingMatch=5
-MaxTimeBeforeStartingMatch=10
-TeamLives=0
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/TBL.ArenaGameMode]
+    Rounds=39
+    RoundTimeLimit=300
+    bClearWeaponsPostRound=True
+    bClearHorsesPostRound=True
+    bResetTaggedActorsPostRound=True
+    bUsePreCountdownForCustomizationLoading=True
+    MinTimeBeforeStartingMatch=5
+    MaxTimeBeforeStartingMatch=10
+    TeamLives=0
+    ```
 
 !!! info "TeamLives Explanation"
     TeamLives represents extra lives a team gets. For example, in a 6v6 match with TeamLives=1, the first player who dies on each team gets an extra life. With TeamLives=2, the first two players who die get an extra life, and so on.
 
 ## GameUserSettings.ini Settings
 
-### [/Script/TBL.TBLGameUserSettings] Section
+### `[/Script/TBL.TBLGameUserSettings]` Section
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
 | MaxFPS | Maximum frames per second for the server | 80 |
 | FrameRateLimit | Frame rate limit in floating point format | 80.000000 |
 
-```ini
-[/Script/TBL.TBLGameUserSettings]
-MaxFPS=80
-FrameRateLimit=80.000000
-```
+??? example "Example Configuration"
+    ```ini
+    [/Script/TBL.TBLGameUserSettings]
+    MaxFPS=80
+    FrameRateLimit=80.000000
+    ```
 
 !!! important "FPS Synchronization"
     MaxFPS is important and should be advertised in your server name. Players will need to match this FPS to avoid desync issues.
