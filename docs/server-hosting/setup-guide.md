@@ -117,6 +117,8 @@ These commands are from the same list as the in-game console.
 
 For advanced server configuration options, including network settings, see our [Server Configuration Guide](configuration.md).
 
+For information on how to moderate your server, including kicking and banning players, see our [Server Moderation Guide](moderation.md).
+
 ## Port Forwarding
 
 **NFO Hosts:** NFO servers have automatic port forwarding—you don't have to do anything here.
@@ -171,6 +173,7 @@ Before launching your server, ensure you've configured these essential settings:
 - [ ] Set up map rotation
 - [ ] Configure team balance settings if hosting team-based modes
 - [ ] Forward required ports (Game Port and Ping Port)
+- [ ] Familiarize yourself with [server moderation commands](moderation.md)
 
 For LTS/Arena servers, also configure:
 - [ ] Set appropriate round count and time limits
