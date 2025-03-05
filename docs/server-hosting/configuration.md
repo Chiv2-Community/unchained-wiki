@@ -42,7 +42,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ## Game.ini Settings
 
-### Player Count Configuration
+### [/Script/Engine.GameSession] Section
 
 ```ini
 [/Script/Engine.GameSession]
@@ -53,83 +53,51 @@ MaxPlayers=256
 |-----------|-------------|---------------|
 | MaxPlayers | Maximum number of players allowed on the server | 256 |
 
-### Bot Backfill Configuration
+### [/Script/TBL.TBLGameMode] Section
 
 ```ini
 [/Script/TBL.TBLGameMode]
+# Server Name
+ServerName=My Local server
+
+# Bot Backfill Settings
 BotBackfillEnabled=True
 BotBackfillLowPlayers=10
 BotBackfillLowBots=12
 BotBackfillHighPlayers=30
 BotBackfillHighBots=0
-```
 
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| BotBackfillEnabled | Enables or disables bot backfill feature | True |
-| BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
-| BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
-| BotBackfillHighPlayers | Player count threshold for minimum bot spawning | 30 |
-| BotBackfillHighBots | Number of bots to spawn when player count is at or above the high threshold | 0 |
-
-### Server Name Configuration
-
-```ini
-[/Script/TBL.TBLGameMode]
-ServerName=My Local server
-```
-
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
-
-### Match Timing Configuration
-
-```ini
-[/Script/TBL.TBLGameMode]
+# Match Timing
 MinTimeBeforeStartingMatch=1.000000
-```
 
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| MinTimeBeforeStartingMatch | Minimum warmup time in seconds before a match starts | 1.000000 |
-
-### AFK Timer Configuration
-
-```ini
-[/Script/TBL.TBLGameMode]
+# AFK Timers
 IdleKickTimerSpectate=0.000000
 IdleKickTimerDisconnect=0.000000
-```
 
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| IdleKickTimerSpectate | Time in seconds before an idle player is moved to spectator (0 to disable) | 0.000000 |
-| IdleKickTimerDisconnect | Time in seconds before an idle player is disconnected (0 to disable) | 0.000000 |
-
-### Map List Configuration
-
-```ini
-[/Script/TBL.TBLGameMode]
+# Map List
 Maplist=FFA_Wardenglade
 Maplist=FFA_TournamentGrounds
 Maplist=FFA_Courtyard
 Maplist=FFA_Galencourt
 MapListIndex=-1
-```
 
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
-| MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
-
-### Horse Configuration
-
-```ini
-[/Script/TBL.TBLGameMode]
+# Horse Settings
 bHorseCompatibleServer=true
 ```
 
+#### TBLGameMode Parameters
+
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
+| ServerName | The name displayed in the upper left corner when pressing Tab in-game | My Local server |
+| BotBackfillEnabled | Enables or disables bot backfill feature | True |
+| BotBackfillLowPlayers | Player count threshold for maximum bot spawning | 10 |
+| BotBackfillLowBots | Number of bots to spawn when player count is at or below the low threshold | 12 |
+| BotBackfillHighPlayers | Player count threshold for minimum bot spawning | 30 |
+| BotBackfillHighBots | Number of bots to spawn when player count is at or above the high threshold | 0 |
+| MinTimeBeforeStartingMatch | Minimum warmup time in seconds before a match starts | 1.000000 |
+| IdleKickTimerSpectate | Time in seconds before an idle player is moved to spectator (0 to disable) | 0.000000 |
+| IdleKickTimerDisconnect | Time in seconds before an idle player is disconnected (0 to disable) | 0.000000 |
+| Maplist | A map to include in the rotation (add multiple lines for multiple maps) | FFA_Wardenglade |
+| MapListIndex | Index of the current map in rotation (-1 for random start) | -1 |
 | bHorseCompatibleServer | Enables or disables horses on the server | true |
