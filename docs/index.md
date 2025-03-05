@@ -38,7 +38,7 @@ Connect to custom Unchained modded servers using the Chivalry 2 Unchained server
 * Mods which require all clients to have the mod to play.
 
 #### Unchained Server Hosting Mode
-Host your own Chivalry 2 servers with custom map rotations, mods and whatever network settings you desire. You can enable higher tickrates, more difficult bots, set restrictions on classes and more.
+Host your own Chivalry 2 servers with custom map rotations, mods and whatever network settings you desire. You can enable higher tickrates, more difficult bots, set restrictions on classes and more. Check out our [Server Hosting Guide](server-hosting/setup-guide.md) to get started.
 
 ## Community and Support
 
