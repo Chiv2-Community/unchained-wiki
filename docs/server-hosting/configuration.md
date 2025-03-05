@@ -45,7 +45,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ## Game.ini Settings
 
-### `[/Script/Engine.GameSession]` Section
+### `[/Script/Engine.GameSession]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -57,9 +57,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
     MaxPlayers=256
     ```
 
-### `[/Script/TBL.TBLGameMode]` Section
-
-#### TBLGameMode Parameters
+### `[/Script/TBL.TBLGameMode]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -130,7 +128,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
     bUseStrictTeamBalanceEnforcement=False
     ```
 
-### `[/Script/TBL.TBLTitleScreen]` Section
+### `[/Script/TBL.TBLTitleScreen]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -145,7 +143,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 !!! note "Important"
     This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt. If your server isn't starting, this is likely the cause.
 
-### `[/Script/TBL.LTSGameMode]` Section
+### `[/Script/TBL.LTSGameMode]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -162,7 +160,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 !!! tip "Rounds Calculation"
     Set Rounds to N*2-1 where N is the number of rounds you want the game to go to. For example, if you want first to 20, use N=20 for Rounds=39.
 
-### `[/Script/TBL.ArenaGameMode]` Section
+### `[/Script/TBL.ArenaGameMode]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
@@ -195,7 +193,7 @@ For more UE4 network settings, see the [Unreal Engine Networking Documentation](
 
 ## GameUserSettings.ini Settings
 
-### `[/Script/TBL.TBLGameUserSettings]` Section
+### `[/Script/TBL.TBLGameUserSettings]`
 
 | Parameter | Description | Example Value |
 |-----------|-------------|---------------|
