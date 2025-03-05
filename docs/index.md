@@ -19,6 +19,7 @@ Since Chivalry 2 does not support mods by default, the game must be launched via
 1. **Official Unmodded Mode**  
    Launch Chivalry 2 (Torn Banner Official) for the standard, unmodified game experience.
 
+
 2. **Client-Side Modding Mode**  
    Run Chivalry 2 with client-side mods on official multiplayer servers. These mods can cosmetically change or enhance the game for you. Examples include:
    - **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
@@ -26,12 +27,14 @@ Since Chivalry 2 does not support mods by default, the game must be launched via
    - [in development] Detailed logging of in-game events for statistics and score tracking.
    - [in development] Enhancements for competitive and community events.
 
+
 3. **Full Unchained Multiplayer Mode**  
    Connect to custom Unchained modded servers using the Chivalry 2 Unchained server list. This mode supports standalone server-hosted mods that can introduce major gameplay changes, such as:
    - Custom Maps, Weapons, Classes, etc.
    - 'Giant slayers' mode.
    - Potential PvE cooperative horde mode.
    - Mods which require all clients to have the mod to play.
+   
 
 The Unchained launcher also integrates tooling to manage your Chivalry 2 modifications collection via a mod repository to download, update, and manage mods easily. The Unchained Launcher also contains the capability to manage server hosting settings and run a 'headless' server for Chivalry 2 for play on local LAN or via the internet with other Chivalry Unchained players.
 
