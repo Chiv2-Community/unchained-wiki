@@ -115,3 +115,19 @@ bSavedHasAgreedToTOS=True
 
 !!! note "Important"
     This setting is necessary for initial setup of headless servers to bypass the Terms of Service prompt.
+
+### [/Script/TBL.LTSGameMode] Section
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| PreCountdownDelay | Time in seconds before the match countdown begins | 5 |
+| Rounds | Total number of rounds to play (should be N*2-1 where N is the number of rounds to win) | 39 |
+
+```ini
+[/Script/TBL.LTSGameMode]
+PreCountdownDelay=5
+Rounds=39
+```
+
+!!! tip "Rounds Calculation"
+    Set Rounds to N*2-1 where N is the number of rounds you want the game to go to. For example, if you want first to 20, use N=20 for Rounds=39.
