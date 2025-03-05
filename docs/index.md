@@ -14,29 +14,32 @@ Connect with other Chivalry 2 Unchained users, get support, share your mods, and
 
 Since Chivalry 2 does not support mods by default, the game must be launched via the Unchained Launcher. Whether you want to play with regular Chivalry with client-side mods, host or play on your own servers, or develop your own mods, the launcher is your gateway.
 
+The Unchained launcher integrates with a repository of community-made mods to easily enable, disable or update Chivalry 2 mods easily. 
+
+The Unchained Launcher also contains the capability to manage server hosting settings and run a 'headless' server for Chivalry 2 for play on local LAN or via the internet with other Chivalry Unchained players.
+
 ## Chivalry 2 Unchained Launcher Modes of Operation
 
-1. **Official Unmodded Mode**  
-   Launch Chivalry 2 (Torn Banner Official) for the standard, unmodified game experience.
+### Official Unmodded Mode**  
+Launch Chivalry 2 (Torn Banner Official) for the standard, unmodified game experience.
+
+### Client-Side Modding Mode
+Run Chivalry 2 with client-side mods on official multiplayer servers. These mods can cosmetically change or enhance the game for you. Examples include:
+- **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
+- **nightlife:** Enable nighttime versions of all Chivalry 2 maps.
+- [in development] Detailed logging of in-game events for statistics and score tracking.
+- [in development] Enhancements for competitive and community events.
 
 
-2. **Client-Side Modding Mode**  
-   Run Chivalry 2 with client-side mods on official multiplayer servers. These mods can cosmetically change or enhance the game for you. Examples include:
-   - **dripsync:** Maintain and dynamically switch between preset heraldry and character configurations.
-   - **nightlife:** Enable nighttime versions of all Chivalry 2 maps.
-   - [in development] Detailed logging of in-game events for statistics and score tracking.
-   - [in development] Enhancements for competitive and community events.
+### Unchained Multiplayer Mode 
+Connect to custom Unchained modded servers using the Chivalry 2 Unchained server list. This mode supports standalone server-hosted mods that can introduce major gameplay changes, such as:
+- Custom Maps, Weapons, Classes, etc.
+- 'Giant slayers' mode.
+- Potential PvE cooperative horde mode.
+- Mods which require all clients to have the mod to play.
 
-
-3. **Full Unchained Multiplayer Mode**  
-   Connect to custom Unchained modded servers using the Chivalry 2 Unchained server list. This mode supports standalone server-hosted mods that can introduce major gameplay changes, such as:
-   - Custom Maps, Weapons, Classes, etc.
-   - 'Giant slayers' mode.
-   - Potential PvE cooperative horde mode.
-   - Mods which require all clients to have the mod to play.
-   
-
-The Unchained launcher also integrates tooling to manage your Chivalry 2 modifications collection via a mod repository to download, update, and manage mods easily. The Unchained Launcher also contains the capability to manage server hosting settings and run a 'headless' server for Chivalry 2 for play on local LAN or via the internet with other Chivalry Unchained players.
+### Unchained Server Hosting Mode
+Host your own Chivalry 2 servers with custom map rotations, mods and whatever network settings you desire. You can enable higher tickrates, more difficult bots, set restrictions on classes and more.
 
 ## Unchained Launcher Installation Process
 
