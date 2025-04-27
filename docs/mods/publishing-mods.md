@@ -14,7 +14,6 @@ This guide includes:
 - Step-by-step Git installation instructions
 - Basic Git command explanations
 - Detailed GitHub account setup
-- Visual guidance through every step
 - Common troubleshooting tips
 
 ### Already comfortable with Git and GitHub?

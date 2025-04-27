@@ -1,29 +1,25 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Publishing Your Mod to the launcher registry](#publishing-your-mod-to-the-launcher-registry)
+    - [Prerequisites](#prerequisites)
+    - [Step 1: Install Git](#step-1-install-git)
+    - [Step 2: Set Up Your Mod Locally](#step-2-set-up-your-mod-locally)
+    - [Step 3: Create a GitHub Repository](#step-3-create-a-github-repository)
+    - [Step 4: Connect Local Repository to GitHub](#step-4-connect-local-repository-to-github)
+    - [Step 5: Prepare Your Mod Configuration](#step-5-prepare-your-mod-configuration)
+    - [Step 6: Create a GitHub Release](#step-6-create-a-github-release)
+    - [Step 7: Submit Your Mod to C2ModRegistry](#step-7-submit-your-mod-to-c2modregistry)
+    - [Step 8: Wait for Approval](#step-8-wait-for-approval)
+- [Publishing Updates to Your Mod](#publishing-updates-to-your-mod)
+- [Tips for a Successful Submission](#tips-for-a-successful-submission)
+- [Troubleshooting](#troubleshooting)
+
+
 # Publishing Your Mod to the launcher registry
 
 This guide explains how to publish your mod to the mod registry that is used by the launcher, making it easily discoverable by Chivalry 2 players using the Unchained Launcher.
 
 Publishing is done via github, so git and github.com will be used as part of this process. There is a lot that can be done with git, and it is an extremely useful tool for making changes to things without losing older versions. This guide will only use surface level git functionality, but there are many features it has that may help you maintain your mod.
-
-## Table of Contents
-- [Publishing Your Mod to the launcher registry](#publishing-your-mod-to-the-launcher-registry)
-  - [Table of Contents](#table-of-contents)
-  - [Prerequisites](#prerequisites)
-  - [Step 1: Install Git](#step-1-install-git)
-    - [Installing Git](#installing-git)
-    - [Verify Installation](#verify-installation)
-  - [Step 2: Set Up Your Mod Locally](#step-2-set-up-your-mod-locally)
-    - [Initialize Git Repository](#initialize-git-repository)
-    - [Configure Git](#configure-git)
-    - [Add Your Mod Files](#add-your-mod-files)
-  - [Step 3: Create a GitHub Repository](#step-3-create-a-github-repository)
-  - [Step 4: Connect Local Repository to GitHub](#step-4-connect-local-repository-to-github)
-  - [Step 5: Prepare Your Mod Configuration](#step-5-prepare-your-mod-configuration)
-  - [Step 6: Create a GitHub Release](#step-6-create-a-github-release)
-  - [Step 7: Submit Your Mod to C2ModRegistry](#step-7-submit-your-mod-to-c2modregistry)
-  - [Step 8: Wait for Approval](#step-8-wait-for-approval)
-- [Publishing Updates to Your Mod](#publishing-updates-to-your-mod)
-- [Tips for a Successful Submission](#tips-for-a-successful-submission)
-- [Troubleshooting](#troubleshooting)
 
 
 ## Prerequisites
