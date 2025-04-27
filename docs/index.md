@@ -8,6 +8,7 @@ Through the Unchained Launcher, players can decide their preferred mode of Chiva
 
 * [Installation Guide](unchained-launcher/installation.md)
 * [Server Hosting Guide](server-hosting/setup-guide.md)
+* [Mod publishing Guide](mods/publishing-mods.md)
 * [Join our Discord](https://discord.gg/chiv2unchained)
 
 ## What Can You Do With Chivalry 2 Unchained?

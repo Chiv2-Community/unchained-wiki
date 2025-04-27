@@ -2,6 +2,29 @@ site_name: Chivalry 2 Unchained
 repo_url: https://github.com/Chiv2-Community/unchained-wiki
 edit_uri: blob/main/docs/
 
+nav:
+  - Home: index.md
+  - Server Hosting:
+    - Setup Guide: server-hosting/setup-guide.md
+    - Configuration: server-hosting/configuration.md
+    - Moderation: server-hosting/moderation.md
+  - Unchained Launcher:
+    - Installation: unchained-launcher/installation.md
+    - Mod Setup: unchained-launcher/mod-setup.md
+  - Mod Development:
+    - Publishing Mods: mod-development/publishing-mods.md
+
+nav:
+  - Home: index.md
+  - Server Hosting:
+    - Setup Guide: server-hosting/setup-guide.md
+    - Configuration: server-hosting/configuration.md
+    - Moderation: server-hosting/moderation.md
+  - Unchained Launcher:
+    - Installation: unchained-launcher/installation.md
+    - Mod Setup: unchained-launcher/mod-setup.md
+  - Mod Development:
+    - Publishing Mods: mod-development/publishing-mods.md
 
 theme:
   name: 'material'
