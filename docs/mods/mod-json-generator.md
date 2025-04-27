@@ -50,6 +50,11 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
           <input type="text" class="dep-version" placeholder="Version (e.g., 0.1.0)">
           <button type="button" class="remove-dep" style="display:none;">Remove</button>
         </div>
+        <div class="dependency-row">
+          <input type="text" class="dep-repo" placeholder="Repository URL (e.g., https://github.com/Chiv2-Community/Unchained-Mods)">
+          <input type="text" class="dep-version" placeholder="Version (e.g., 0.1.0)">
+          <button type="button" class="remove-dep" style="display:none;">Remove</button>
+        </div>
       </div>
       <button type="button" id="addDependency">Add Dependency</button>
     </div>
@@ -86,7 +91,9 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 .form-group select {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -127,8 +134,8 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 }
 
 .remove-dep {
-  background: #dc3545;
-  color: white;
+  background: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
   border: none;
   padding: 0.5rem;
   border-radius: 4px;
@@ -136,8 +143,8 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 }
 
 #addDependency {
-  background: #007bff;
-  color: white;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -145,8 +152,8 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 }
 
 .generate-button {
-  background: #28a745;
-  color: white;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -158,15 +165,24 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 #outputContainer {
   margin-top: 2rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 4px;
 }
 
 #outputContainer pre {
-  background: #fff;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;
+  margin: 0;
+}
+
+#outputContainer pre code {
+  background: transparent;
+  color: var(--md-code-fg-color);
+  padding: 0;
 }
 
 #copyButton, #downloadButton {
@@ -179,13 +195,27 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 }
 
 #copyButton {
-  background: #007bff;
-  color: white;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
 }
 
 #downloadButton {
-  background: #6c757d;
-  color: white;
+  background: var(--md-default-fg-color--light);
+  color: var(--md-default-bg-color);
+}
+
+/* Ensure buttons are visible on hover */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Style for dark mode */
+[data-md-color-scheme="slate"] {
+  .form-group input[type="text"],
+  .form-group textarea,
+  .form-group select {
+    border-color: var(--md-default-fg-color--lighter);
+  }
 }
 </style>
 
@@ -243,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .map(checkbox => checkbox.value);
 
     // Get dependencies
-    const dependencies = [];
+    const dependencies = [ {repo_url: "https://github.com/Chiv2-Community/Unchained-Mods", version: "0.1.0"} ];
     document.querySelectorAll('.dependency-row').forEach(row => {
       const repo = row.querySelector('.dep-repo').value.trim();
       const version = row.querySelector('.dep-version').value.trim();
