@@ -46,8 +46,8 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
       <label>Dependencies</label>
       <div id="dependenciesContainer">
         <div class="dependency-row">
-          <input type="text" class="dep-repo" placeholder="Repository URL (e.g., https://github.com/Chiv2-Community/Unchained-Mods)">
-          <input type="text" class="dep-version" placeholder="Version (e.g., 0.1.0)">
+          <input type="text" class="dep-repo" placeholder="Repository URL (e.g., https://github.com/Chiv2-Community/Unchained-Mods)" value="https://github.com/Chiv2-Community/Unchained-Mods">
+          <input type="text" class="dep-version" placeholder="Version (e.g., 0.1.0)" value="0.1.0">
           <button type="button" class="remove-dep" style="display:none;">Remove</button>
         </div>
         <div class="dependency-row">
