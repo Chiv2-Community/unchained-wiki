@@ -120,7 +120,15 @@ After creating your GitHub repository (following instructions from Step 3), you'
 
 ## Step 5: Prepare Your Mod Configuration
 
-Create or update the `mod.json` file at the root of your repository with the following structure:
+Create or update the `mod.json` file at the root of your repository. You have two options:
+
+### Option 1: Use the mod.json Generator (Recommended)
+
+💡 **[Use our mod.json generator](../../mod-json-generator.md)** for an interactive way to create your mod.json file! Simply fill in the fields and it will generate a properly formatted file for you.
+
+### Option 2: Create Manually
+
+If you prefer to create the file manually, use the following structure:
 
 ```json
 {

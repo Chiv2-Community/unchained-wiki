@@ -47,7 +47,7 @@ This guide provides:
 Regardless of which guide you choose, the general process involves:
 
 1. Setting up your mod in a Git repository
-2. Creating a proper `mod.json` configuration file
+2. Creating a proper `mod.json` configuration file (💡 **[Use our mod.json generator](../mod-json-generator.md)** for an easy way to create this file!)
 3. Creating a GitHub release with your mod files
 4. Submitting your repository to the C2ModRegistry
 5. Waiting for approval from the registry maintainers
