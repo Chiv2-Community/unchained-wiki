@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .map(checkbox => checkbox.value);
 
     // Get dependencies
-    const dependencies = [ {repo_url: "https://github.com/Chiv2-Community/Unchained-Mods", version: "0.1.0"} ];
+    const dependencies = [ ];
     document.querySelectorAll('.dependency-row').forEach(row => {
       const repo = row.querySelector('.dep-repo').value.trim();
       const version = row.querySelector('.dep-version').value.trim();
