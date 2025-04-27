@@ -128,8 +128,11 @@ If you prefer to create the file manually, use the following structure:
 
 ```json
 {
+  "repo_url": "https://github.com/yourusername/your-mod-repo",
   "name": "Your Mod Name",
   "description": "A short description of your mod",
+  "home_page": "https://yourdocsite.com",  // Optional
+  "image_url": "https://example.com/mod-image.png",  // Optional
   "mod_type": "Client",  
   "authors": ["Your Name"],
   "dependencies": [
@@ -138,7 +141,11 @@ If you prefer to create the file manually, use the following structure:
       "version": "0.1.0"  
     }
   ],
-  "tags": ["Weapon"] 
+  "tags": ["Weapon"],
+  "maps": [],  // List of maps this mod provides (if any)
+  "options": {
+    "actor_mod": false  // Set to true if your mod affects actors
+  }
 }
 ```
 

@@ -5,6 +5,11 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
 <div class="mod-json-generator">
   <form id="modJsonForm">
     <div class="form-group">
+      <label for="repoUrl">Repository URL *</label>
+      <input type="text" id="repoUrl" required placeholder="https://github.com/yourusername/your-mod-repo">
+    </div>
+
+    <div class="form-group">
       <label for="modName">Mod Name *</label>
       <input type="text" id="modName" required placeholder="Your Mod Name">
     </div>
@@ -26,6 +31,16 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
     <div class="form-group">
       <label for="modAuthors">Authors *</label>
       <input type="text" id="modAuthors" required placeholder="Your Name (comma-separated for multiple authors)">
+    </div>
+
+    <div class="form-group">
+      <label for="homePage">Home Page (optional)</label>
+      <input type="text" id="homePage" placeholder="https://yourdocsite.com">
+    </div>
+
+    <div class="form-group">
+      <label for="imageUrl">Image URL (optional)</label>
+      <input type="text" id="imageUrl" placeholder="https://example.com/mod-image.png">
     </div>
 
     <div class="form-group">
@@ -59,6 +74,19 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
       <button type="button" id="addDependency">Add Dependency</button>
     </div>
 
+    <div class="form-group">
+      <label for="maps">Maps (comma-separated list)</label>
+      <input type="text" id="maps" placeholder="Map1, Map2">
+      <small>List of maps this mod provides (if any)</small>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="actorMod">
+        Actor Mod (Check if your mod affects actors)
+      </label>
+    </div>
+
     <button type="submit" class="generate-button">Generate mod.json</button>
   </form>
 
@@ -84,6 +112,13 @@ Use this interactive form to generate a properly formatted `mod.json` file for y
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
 }
 
 .form-group input[type="text"],
@@ -263,10 +298,13 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
 
     // Get form values
+    const repoUrl = document.getElementById('repoUrl').value;
     const modName = document.getElementById('modName').value;
     const modDescription = document.getElementById('modDescription').value;
     const modType = document.getElementById('modType').value;
     const modAuthors = document.getElementById('modAuthors').value.split(',').map(author => author.trim());
+    const homePage = document.getElementById('homePage').value || null;
+    const imageUrl = document.getElementById('imageUrl').value || null;
 
     // Get tags
     const tags = Array.from(document.querySelectorAll('input[name="modTags"]:checked'))
@@ -282,14 +320,26 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
+    // Get maps and options
+    const mapsInput = document.getElementById('maps').value.trim();
+    const maps = mapsInput ? mapsInput.split(',').map(m => m.trim()).filter(m => m) : [];
+    const actorMod = document.getElementById('actorMod').checked;
+
     // Create mod.json object
     const modJson = {
+      repo_url: repoUrl,
       name: modName,
       description: modDescription,
+      ...(homePage && { home_page: homePage }),
+      ...(imageUrl && { image_url: imageUrl }),
       mod_type: modType,
       authors: modAuthors,
       dependencies: dependencies,
-      tags: tags
+      tags: tags,
+      maps: maps,
+      options: {
+        actor_mod: actorMod
+      }
     };
 
     // Display the generated JSON
