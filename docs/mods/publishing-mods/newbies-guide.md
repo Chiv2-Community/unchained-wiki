@@ -120,7 +120,7 @@ Create or update the `mod.json` file at the root of your repository. You have tw
 
 ### Option 1: Use the mod.json Generator (Recommended)
 
-💡 **[Use our mod.json generator](../../mod-json-generator.md)** for an interactive way to create your mod.json file! Simply fill in the fields and it will generate a properly formatted file for you.
+💡 **[Use the mod.json generator](../../mod-json-generator.md)** for an interactive way to create your mod.json file! Simply fill in the fields and it will generate a properly formatted file for you.
 
 ### Option 2: Create Manually
 

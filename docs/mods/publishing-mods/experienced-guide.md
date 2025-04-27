@@ -11,7 +11,7 @@ This streamlined guide is for developers already familiar with Git and GitHub wh
 
 ## mod.json Structure
 
-💡 **[Use our mod.json generator](../../mod-json-generator.md)** for an interactive way to create your mod.json file!
+💡 **[Use the mod.json generator](../../mod-json-generator.md)** for an interactive way to create your mod.json file!
 
 Place this at your repository root:
 
