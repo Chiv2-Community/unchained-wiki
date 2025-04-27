@@ -13,6 +13,8 @@ nav:
     - Mod Setup: unchained-launcher/mod-setup.md
   - Mod Development:
     - Publishing Mods: mods/publishing-mods.md
+      - New Git Users Guide: mods/publishing-mods/newbies-guide.md
+      - Experienced Git Users Guide: mods/publishing-mods/experienced-guide.md
     - mod.json Generator: mods/mod-json-generator.md
 
 theme:
