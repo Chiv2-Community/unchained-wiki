@@ -8,7 +8,7 @@ Welcome to the mod publishing guide! This page will help you choose the right gu
 
 If you've never used Git before or are uncomfortable with command line tools, start with our comprehensive newbie guide:
 
-👉 **[Publishing Mods - GitHub Newbies Guide](publishing-mods-github-newbies-guide.md)**
+👉 **[Publishing Mods - GitHub Newbies Guide](newbies-guide.md)**
 
 This guide includes:
 - Step-by-step Git installation instructions
@@ -21,7 +21,7 @@ This guide includes:
 
 If you regularly use Git and GitHub and understand concepts like branches, commits, and pull requests, use our streamlined experienced user guide:
 
-👉 **[Publishing Mods - GitHub Experienced Guide](publishing-mods-github-experienced-guide.md)**
+👉 **[Publishing Mods - GitHub Experienced Guide](experienced-guide.md)**
 
 This guide provides:
 - Quick-start instructions
