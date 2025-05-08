@@ -54,7 +54,7 @@ If Git is installed correctly, you'll see the version number.
 1. Open a terminal/command prompt
 2. Navigate to your mod's root directory using the `cd` command. For example:
    ```bat
-   cd C:\Path\To\ArgonSDK\Content\Mods
+   cd C:\Path\To\ArgonSDK\Content\Mods\MyMod
    ```
 
 3. Initialize Git in this directory:
@@ -86,6 +86,7 @@ Use the same email you use for your GitHub account.
    ```bat
    git commit -m "Initial commit of my mod"
    ```
+   
 
 ## Step 3: Create a GitHub Repository
 
