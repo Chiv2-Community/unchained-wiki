@@ -17,7 +17,7 @@ jobs:
           python-version: 3.x
       - run: |
           mkdir -p 'docs/ArgonSDK Tutorials/'
-          cp -r "submodules/ArgonSDK-FieldGuide/docs/*" 'docs/ArgonSDK Tutorials/'
+          cp -r submodules/ArgonSDK-FieldGuide/docs/* 'docs/ArgonSDK Tutorials/'
       - uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
