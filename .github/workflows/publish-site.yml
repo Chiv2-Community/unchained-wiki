@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: "cp -r 'submodules/ArgonSDK-FieldGuide/docs' 'docs/ArgonSDK Tutorials'"
+      - run: |
+          mkdir -p 'docs/ArgonSDK Tutorials/'
+          cp -r 'submodules/ArgonSDK-FieldGuide/docs/*' 'docs/ArgonSDK Tutorials/'
       - uses: actions/cache@v4
         with:
           key: ${{ github.ref }}

@@ -12,10 +12,15 @@ nav:
     - Installation: unchained-launcher/installation.md
     - Mod Setup: unchained-launcher/mod-setup.md
   - Mod Development:
+    - Field Guide: 
+      - Overview: ArgonSDK Tutorials/index.md
+      - Introduction: ArgonSDK Tutorials/introduction.md
+  - Mod Publishing:
     - Publishing Mods: mods/publishing-mods.md
     - Publishing Mods - New Git Users Guide: mods/publishing-mods/newbies-guide.md
     - Publishing Mods - Experienced Git Users Guide: mods/publishing-mods/experienced-guide.md
     - mod.json Generator: mods/mod-json-generator.md
+
 
 theme:
   name: 'material'
