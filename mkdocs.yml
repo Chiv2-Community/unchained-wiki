@@ -14,7 +14,7 @@ nav:
   - Mod Development:
     - Field Guide: 
       - Overview: ArgonSDK Tutorials/index.md
-      - Introduction: ArgonSDK Tutorials/introduction.md
+      - Introduction: ArgonSDK Tutorials/Introduction.md
   - Mod Publishing:
     - Publishing Mods: mods/publishing-mods.md
     - Publishing Mods - New Git Users Guide: mods/publishing-mods/newbies-guide.md
