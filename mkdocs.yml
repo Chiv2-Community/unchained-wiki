@@ -12,14 +12,15 @@ nav:
     - Installation: unchained-launcher/installation.md
     - Mod Setup: unchained-launcher/mod-setup.md
   - Mod Development:
+    - Getting Started: mod-development/getting-started.md
     - Field Guide: 
-      - Overview: ArgonSDK Tutorials/index.md
-      - Introduction: ArgonSDK Tutorials/Introduction.md
+      - Overview: mod-development/field-guide/index.md
+      - Introduction: mod-development/field-guide/Introduction.md
   - Mod Publishing:
-    - Publishing Mods: mods/publishing-mods.md
-    - Publishing Mods - New Git Users Guide: mods/publishing-mods/newbies-guide.md
-    - Publishing Mods - Experienced Git Users Guide: mods/publishing-mods/experienced-guide.md
-    - mod.json Generator: mods/mod-json-generator.md
+    - Index: publishing-mods/index.md
+    - New Git Users Guide: publishing-mods/newbies-guide.md
+    - Experienced Git Users Guide: publishing-mods/experienced-guide.md
+    - mod.json Generator: publishing-mods/mod-json-generator.md
 
 
 theme:
