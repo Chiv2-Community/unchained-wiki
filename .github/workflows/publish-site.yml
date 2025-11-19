@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          mkdir -p 'docs/mod-development/'
+          mkdir -p 'docs/mod-development/field-guide'
           cp -r submodules/ArgonSDK-FieldGuide/docs/* 'docs/mod-development/field-guide/'
       - uses: actions/cache@v4
         with:
