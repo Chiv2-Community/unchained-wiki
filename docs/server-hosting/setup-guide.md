@@ -60,7 +60,7 @@ EGS does not allow multiple instances of Chivalry 2 to run simultaneously. This 
 
 1. Navigate to C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests
 2. Find the `ITEM` file that contains the text `"LaunchExecutable": "Chivalry2-Win64-Shipping.exe"`
-3. Update the line that reads `"bAllowMultipleInstances": true` and change it to `"bAllowMultipleInstances": false`
+3. Update the line that reads `"bAllowMultipleInstances": false` and change it to `"bAllowMultipleInstances": true`
 4. You should now be able to run multiple Chiv 2 instances with EGS.
 
 ## Recommended Configuration Settings
