@@ -54,6 +54,15 @@ bSavedHasAgreedToTOS=True
 !!! note
     If the TBLGameInstance or TBLTitleScreen sections are already present somewhere in the file, add the lines to those sections instead of making a duplicate.
 
+### Running multiple instances with EGS
+
+EGS does not allow multiple instances of Chivalry 2 to run simultaneously. This can be worked around with a minor config edit.
+
+1. Navigate to C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests
+2. Find the `ITEM` file that contains the text `"LaunchExecutable": "Chivalry2-Win64-Shipping.exe"`
+3. Update the line that reads `"bAllowMultipleInstances": true` and change it to `"bAllowMultipleInstances": false`
+4. You should now be able to run multiple Chiv 2 instances with EGS.
+
 ## Recommended Configuration Settings
 
 While the above settings are the minimum required to get your server running, you'll likely want to customize your server further. Here are some important configuration values to consider:
