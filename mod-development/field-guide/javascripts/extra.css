@@ -1,0 +1,15 @@
+.md-typeset h1 {
+    color: #bf616a;
+}
+
+h2 {
+    color: #ebcb84;
+}
+
+h3 {
+    color: #a3be8c;
+}
+/* Maximum space for text block */
+.md-grid {
+    max-width: 90%; /* or 100%, if you want to stretch to full-width */
+  }
